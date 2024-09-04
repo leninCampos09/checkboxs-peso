@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/icon" /> <!-- Reemplaza con tu drawable -->
+
+    <!-- Nombre Label -->
+    <TextView
+        android:id="@+id/labelNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:minHeight="48dp" />
+
+    <!-- Peso Actual Label -->
+    <TextView
+        android:id="@+id/labelPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Peso actual"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Libra y Kilogramo RadioButtons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioLibra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libra (Lb)"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radioKilogramo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilogramo (Kg)"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Complementos Label -->
+    <TextView
+        android:id="@+id/labelComplementos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Complementos:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Centro para los CheckBox -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Entrenador Privado Checkbox -->
+        <CheckBox
+            android:id="@+id/checkEntrenador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Entrenador privado" />
+
+        <!-- Bote de Proteina Checkbox -->
+        <CheckBox
+            android:id="@+id/checkProteina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Bote de proteína" />
+
+        <!-- Dieta Personalizada Checkbox -->
+        <CheckBox
+            android:id="@+id/checkDieta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dieta personalizada" />
+    </LinearLayout>
+
+    <!-- Registrarse Button -->
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6200EE"
+        android:text="Registrarse!"
+        android:textColor="#FFFFFF" />
+
+    <!-- TextView para mostrar la información -->
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+</LinearLayout>
